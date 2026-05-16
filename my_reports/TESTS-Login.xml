@@ -1,0 +1,64 @@
+<testsuite name="Login.# Enter feature name here" tests="4" errors="0" failures="0" skipped="0" time="3.911619" timestamp="2026-05-12T19:33:04.877466" hostname="DESKTOP-RESVR9V"><testcase classname="Login.# Enter feature name here" name="User logs in" status="passed" time="2.144288"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User logs in
+    Given the user is on the login page ... passed in 0.651s
+    When the user clicks gmail label to go mail page ... passed in 1.465s
+    Then the user verifies gmail page ... passed in 0.028s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Gmail page verified
+
+]]>
+</system-out></testcase><testcase classname="Login.# Enter feature name here" name="Login Jenkins successfully -- @1.1 " status="passed" time="0.760497"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Login Jenkins successfully -- @1.1 
+    Given the user is on the Jenkins login page ... passed in 0.133s
+    When the user enters Admin and 123 ... passed in 0.138s
+    And the user clicks login button ... passed in 0.089s
+    Then the user logins Jenkins successfully ... passed in 0.401s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Jenkins login successfully
+
+]]>
+</system-out></testcase><testcase classname="Login.# Enter feature name here" name="Login Jenkins failed -- @1.1 " status="passed" time="0.48271"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Login Jenkins failed -- @1.1 
+    Given the user is on the Jenkins login page ... passed in 0.095s
+    When the user enters user1 and 123 ... passed in 0.166s
+    And the user clicks login button ... passed in 0.066s
+    Then the user logins Jenkins failed ... passed in 0.157s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Jenkins login failed
+
+]]>
+</system-out></testcase><testcase classname="Login.# Enter feature name here" name="Login Jenkins failed -- @1.2 " status="passed" time="0.524124"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Login Jenkins failed -- @1.2 
+    Given the user is on the Jenkins login page ... passed in 0.018s
+    When the user enters user2 and 231 ... passed in 0.248s
+    And the user clicks login button ... passed in 0.234s
+    Then the user logins Jenkins failed ... passed in 0.023s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Jenkins login failed
+
+]]>
+</system-out></testcase></testsuite>
